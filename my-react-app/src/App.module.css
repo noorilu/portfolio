@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Village";
+  src: url("./static/fonts/Village-wLn3.ttf");
+}
+
+@font-face {
+  font-family: "Upheaval";
+  src: url("./static/fonts/upheavtt.ttf");
+}
+
+@font-face {
+  font-family: "Birch";
+  src: url("./static/fonts/Birch\ Regular.otf");
+}
+
+@font-face {
+  font-family: "Blackoak";
+  src: url("./static/fonts/Blackoak\ Regular.otf");
+}
+
+.appContainer {
+  @apply bg-[#dfeaf0];
+}

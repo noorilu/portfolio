@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.mainContainer {
+  @apply container mx-auto m-2 w-3/4 px-20 py-16 block rounded-3xl bg-white;
+}
+
+.profileContainer {
+  @apply h-auto content-center;
+}
+
+.profile {
+  @apply w-2/5 rounded-3xl object-cover inline-block;
+}
+
+.introduction {
+  @apply w-3/5 font-upheaval inline-block p-10 text-4xl;
+}
+
+.roomContainer {
+  @apply mx-auto py-6;
+}
+
+.room {
+  @apply rounded-3xl object-cover;
+}
