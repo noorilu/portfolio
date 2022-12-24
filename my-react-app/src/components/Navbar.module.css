@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navIcon {
+  @apply object-scale-down h-24 w-24;
+}
+
+.navContainer {
+  @apply flex justify-evenly items-center p-8 w-4/5 mx-auto font-upheaval text-4xl leading-none text-center;
+}
+
+.navTop {
+  @apply flex w-32 justify-between;
+}
+
+.navBottom {
+  @apply flex w-32 justify-between;
+}
