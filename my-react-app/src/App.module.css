@@ -22,6 +22,21 @@
   src: url("./static/fonts/Blackoak\ Regular.otf");
 }
 
+@font-face {
+  font-family: "Cotton";
+  src: url("./static/fonts/Cotton\ Cloud.ttf");
+}
+
+@font-face {
+  font-family: "Omori1";
+  src: url("./static/fonts/OMORI_GAME.ttf");
+}
+
+@font-face {
+  font-family: "Omori2";
+  src: url("./static/fonts/OMORI_GAME2.ttf");
+}
+
 .appContainer {
-  @apply bg-[#dfeaf0];
+  @apply bg-[#dfeaf0] pt-5 pb-20;
 }
