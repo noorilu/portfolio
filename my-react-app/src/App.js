@@ -10,6 +10,9 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Main />} />
+          {/* <Route path="/projects" element={<Projects />} />
+          <Route path="/artworks" element={<Artworks />} />
+          <Route path="/contacts" element={<Contacts />} /> */}
         </Routes>
       </Router>
       <h1 class="font-village text-xl">Village Font</h1>

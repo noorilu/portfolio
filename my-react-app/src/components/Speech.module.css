@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* .speech {
+  @apply flex absolute h-1/4 px-7 py-3 justify-center z-20 rounded-3xl shadow-lg bg-black;
+  opacity: 80%;
+  width: 98%;
+  top: 70%;
+  left: 1%;
+} */
+
+.content {
+  @apply flex absolute h-1/4 px-7 py-3 z-20 rounded-3xl shadow-lg bg-black;
+  opacity: 80%;
+  width: 98%;
+  top: 70%;
+  left: 1%;
+}
+
+.header {
+  @apply flex absolute w-auto px-8 bg-white z-30 justify-center items-center rounded-3xl border-2 border-black;
+  opacity: 90%;
+  top: 68%;
+  left: 3%;
+}
+
+.footer {
+  @apply flex absolute w-auto h-auto z-30 text-white font-upheaval text-2xl;
+  top: 88%;
+  right: 5%;
+}
+
+.speaker {
+  @apply font-upheaval text-4xl;
+}
+
+.body {
+  @apply relative p-6 flex-auto text-white font-omori2 text-2xl;
+  font-size: 1.75rem; /* 24px */
+  line-height: 2rem; /* 32px */
+}
