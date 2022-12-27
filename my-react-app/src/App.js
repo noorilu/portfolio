@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Main from "./pages/main";
 import Projects from "./pages/projects";
+import Artworks from "./pages/artworks";
 
 function App() {
   return (
@@ -12,8 +13,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/projects" element={<Projects />} />
-          {/* <Route path="/artworks" element={<Artworks />} />
-          <Route path="/contacts" element={<Contacts />} /> */}
+          <Route path="/artworks" element={<Artworks />} />
+          {/* <Route path="/contacts" element={<Contacts />} /> */}
         </Routes>
       </Router>
       <h1 class="font-village text-xl">Village Font</h1>

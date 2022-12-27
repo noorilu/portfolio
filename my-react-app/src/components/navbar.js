@@ -34,7 +34,7 @@ function Navbar() {
             <span>m</span>
           </div>
         </Link>
-        <Link to="/">
+        <Link to="/artworks">
           <img
             src={require("../static/icons/art.PNG")}
             alt={"poo"}

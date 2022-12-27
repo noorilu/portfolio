@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.mainContainer {
+  @apply container mx-auto m-2 w-3/4 px-20 py-16 rounded-3xl bg-white;
+}
+
+.profileContainer {
+  @apply max-w-lg h-auto items-start;
+}
+
+.profile {
+  @apply h-auto rounded-3xl p-4;
+}
