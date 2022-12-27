@@ -4,13 +4,15 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        village: ["Village", "sans-serif"],
         upheaval: ["Upheaval", "sans-serif"],
-        birch: ["Birch", "sans-serif"],
         blackoak: ["Blackoak", "sans-serif"],
         cotton: ["Cotton", "sans-serif"],
-        omori1: ["Omori1", "sans-serif"],
-        omori2: ["Omori2", "sans-serif"],
+        omori: ["Omori", "sans-serif"],
+        oxygen: ["Oxygen", "sans-serif"],
+        quicksand: ["Quicksand", "sans-serif"],
+        sacramento: ["Sacramento", "cursive"],
+        greycliff: ["Greycliff", "sans"],
+        montserrat: ["Montserrat", "sans-serif"],
       },
     },
   },

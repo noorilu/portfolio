@@ -89,7 +89,8 @@ function Main() {
         <Speech
           show={speech1}
           speaker="Lucy"
-          body="I am a programmer! With experience in Python, Java, React.js as well as machine languages like MIPS, I am continuing to expand my coding knowledge to share with the world!"
+          body="I am a programmer! With experience in Python, Java, React.js as well as machine 
+          languages like MIPS, I am continuing to expand my coding knowledge to share with the world!"
           onSubmit={() => {
             PageChange("/projects");
           }}
@@ -98,8 +99,8 @@ function Main() {
         <Speech
           show={speech2}
           speaker="Lucy"
-          body="I am an artist! Whether it be in visual arts or music, I've always had an interest in bringing my creative ideas to reality.
-          You can get a sense of it from this page!"
+          body="I am an artist! Whether it be in visual arts or music, I've always had an 
+          interest in bringing my creative ideas to reality. You can get a sense of it from this page!"
           onSubmit={() => {
             PageChange("/artworks");
           }}
@@ -108,7 +109,8 @@ function Main() {
         <Speech
           show={speech3}
           speaker="Lucy"
-          body="I am a lifelong learner! As an ambitious individual who is always looking for ways to expand knowledge, I am seeking more opportunities to explore my interests in greater depth!"
+          body="I am a lifelong learner! As an ambitious individual who is always looking for ways to 
+          expand knowledge, I am seeking more opportunities to explore my interests in greater depth!"
           onSubmit={() => {
             PageChange("/contacts");
           }}

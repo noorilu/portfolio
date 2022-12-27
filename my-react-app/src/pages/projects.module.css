@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.projectsContainer {
+  @apply container mx-auto m-2 w-3/4 px-20 py-16 block rounded-3xl bg-white;
+}
+
+.project {
+  @apply flex h-auto items-start p-4;
+}
+
+.reference {
+  @apply max-h-60 overflow-hidden shadow-lg rounded-xl ease-in-out hover:scale-110 transition duration-500;
+  width: 50%;
+}
+
+.photo {
+  @apply rounded-xl hover:brightness-50 ease-in-out duration-500 inline-block;
+}
+
+/* .hovertext {
+  @apply absolute font-omori text-5xl;
+} */
+
+.about {
+  @apply inline-block px-10;
+  width: 50%;
+}
+
+.big {
+  @apply font-montserrat text-3xl;
+}
+
+.small {
+  @apply font-quicksand text-lg mt-3;
+}
+
+.icons1 {
+  @apply h-5 mt-4 mr-4 inline-block;
+}
+
+.icons2 {
+  @apply h-6 mt-4 mr-4 inline-block;
+}
+
+.icons3 {
+  @apply h-6 mr-4 inline-block;
+  margin-top: 21px;
+}
+
+.icons4 {
+  @apply h-5 mr-4 inline-block;
+  margin-top: 12px;
+}
+
+.icons5 {
+  @apply h-6 mr-4 inline-block;
+  margin-top: 17px;
+}

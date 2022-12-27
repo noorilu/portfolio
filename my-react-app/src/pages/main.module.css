@@ -23,7 +23,7 @@
 }
 
 .small {
-  @apply font-omori2 text-3xl;
+  @apply font-omori text-3xl;
 }
 
 .roomContainer {

@@ -36,7 +36,7 @@
 }
 
 .body {
-  @apply relative p-6 flex-auto text-white font-omori2 text-2xl;
+  @apply relative p-6 flex-auto text-white font-omori text-2xl;
   font-size: 1.75rem; /* 24px */
   line-height: 2rem; /* 32px */
 }

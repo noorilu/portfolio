@@ -13,7 +13,7 @@ function Navbar() {
             className={styles.navIcon}
           />
         </Link>
-        <Link to="/">
+        <Link to="/projects">
           <img
             src={require("../static/icons/projects.PNG")}
             alt={"bunny"}
