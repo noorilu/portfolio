@@ -26,17 +26,17 @@
 }
 
 .footer {
-  @apply flex absolute w-auto h-auto z-30 text-white font-upheaval text-2xl;
+  @apply flex absolute w-auto h-auto z-30 text-white font-quicksand text-xl font-bold;
   top: 88%;
   right: 5%;
 }
 
 .speaker {
-  @apply font-upheaval text-4xl;
+  @apply font-upheaval text-4xl tracking-wider;
 }
 
 .body {
-  @apply relative p-6 flex-auto text-white font-omori text-2xl;
-  font-size: 1.75rem; /* 24px */
+  @apply relative p-6 flex-auto text-white font-quicksand text-xl mt-3;
+  font-size: 18px;
   line-height: 2rem; /* 32px */
 }

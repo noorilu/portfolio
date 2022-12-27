@@ -17,11 +17,11 @@ function App() {
           {/* <Route path="/contacts" element={<Contacts />} /> */}
         </Routes>
       </Router>
-      <h1 class="font-village text-xl">Village Font</h1>
+      {/* <h1 class="font-village text-xl">Village Font</h1>
       <h1 class="font-upheaval text-xl">Upheaval Font</h1>
       <h1 class="font-blackoak text-xl">Blackoak Font</h1>
       <h1 class="font-cotton text-xl">Cotton Cloud</h1>
-      <h1 class="font-omori text-xl">Omori Nice</h1>
+      <h1 class="font-omori text-xl">Omori Nice</h1> */}
     </div>
   );
 }

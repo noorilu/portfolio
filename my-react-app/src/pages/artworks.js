@@ -2,62 +2,190 @@ import React from "react";
 import { useState } from "react";
 import styles from "./artworks.module.css";
 import { useNavigate } from "react-router-dom";
+import ImageModal from "../components/ImageModal.js";
+import Howl from "../static/art/ghmc.PNG";
+import Kiki from "../static/art/gkds.PNG";
+import Totoro from "../static/art/gmnt.PNG";
+import Ponyo from "../static/art/gp.PNG";
+import Arrietty from "../static/art/gtswoa.PNG";
+import Marnie from "../static/art/gwmwh.PNG";
+import DST1 from "../static/art/dst1.png";
+import DST2 from "../static/art/dst2.png";
+import Stardew from "../static/art/sv1.jpg";
+import Apricot from "../static/art/apricot.PNG";
+import Butterfly from "../static/art/bs.jpg";
+import Iforgor from "../static/art/iforgor.PNG";
+import Loona1 from "../static/art/l1.PNG";
+import Loona2 from "../static/art/l2.PNG";
+import Minji from "../static/art/mj.PNG";
+import NewJeans from "../static/art/nj.jpg";
+import Tangle from "../static/art/tt.jpg";
 
 function Artworks() {
+  const [imageModal, setImageModal] = useState(false);
+  const [imgsrc, setImgsrc] = useState("");
   const Navigate = useNavigate();
   const PageChange = (url) => {
     Navigate(url);
   };
 
+  const handleImageClick = (img) => {
+    if (img) {
+      setImgsrc(img);
+      setImageModal(true);
+    } else {
+      console.log("gg");
+    }
+  };
+
   return (
-    <div className={styles.mainContainer}>
+    <div
+      className={styles.mainContainer}
+      onClick={() => {
+        if (imageModal) {
+          setImageModal(false);
+        }
+      }}
+    >
       <div className={styles.profileContainer}>
         <img
-          src={require("../static/art/ghmc.PNG")}
+          src={Howl}
           alt={"howl"}
           className={styles.profile}
+          onClick={() => {
+            handleImageClick(Howl);
+          }}
         />
         <img
-          src={require("../static/art/gkds.PNG")}
+          src={Kiki}
           alt={"kiki"}
           className={styles.profile}
+          onClick={() => {
+            handleImageClick(Kiki);
+          }}
         />
         <img
-          src={require("../static/art/gmnt.PNG")}
+          src={Totoro}
           alt={"totoro"}
           className={styles.profile}
+          onClick={() => {
+            handleImageClick(Totoro);
+          }}
         />
         <img
-          src={require("../static/art/gp.PNG")}
+          src={Ponyo}
           alt={"ponyo"}
           className={styles.profile}
+          onClick={() => {
+            handleImageClick(Ponyo);
+          }}
         />
         <img
-          src={require("../static/art/gtswoa.PNG")}
-          alt={"arietty"}
+          src={Arrietty}
+          alt={"arrietty"}
           className={styles.profile}
+          onClick={() => {
+            handleImageClick(Arrietty);
+          }}
         />
         <img
-          src={require("../static/art/gwmwh.PNG")}
+          src={Marnie}
           alt={"marnie"}
           className={styles.profile}
+          onClick={() => {
+            handleImageClick(Marnie);
+          }}
         />
         <img
-          src={require("../static/art/dst1.png")}
+          src={DST1}
           alt={"dst1"}
           className={styles.profile}
+          onClick={() => {
+            handleImageClick(DST1);
+          }}
         />
         <img
-          src={require("../static/art/dst2.png")}
+          src={DST2}
           alt={"dst2"}
           className={styles.profile}
+          onClick={() => {
+            handleImageClick(DST2);
+          }}
         />
         <img
-          src={require("../static/art/sv1.jpg")}
+          src={Stardew}
           alt={"sv1"}
           className={styles.profile}
+          onClick={() => {
+            handleImageClick(Stardew);
+          }}
+        />
+        <img
+          src={Apricot}
+          alt={"apricot"}
+          className={styles.profile}
+          onClick={() => {
+            handleImageClick(Apricot);
+          }}
+        />
+        <img
+          src={Butterfly}
+          alt={"butterflysoup"}
+          className={styles.profile}
+          onClick={() => {
+            handleImageClick(Butterfly);
+          }}
+        />
+        <img
+          src={Iforgor}
+          alt={"iforgor"}
+          className={styles.profile}
+          onClick={() => {
+            handleImageClick(Iforgor);
+          }}
+        />
+        <img
+          src={Loona1}
+          alt={"loona1"}
+          className={styles.profile}
+          onClick={() => {
+            handleImageClick(Loona1);
+          }}
+        />
+        <img
+          src={Loona2}
+          alt={"loona2"}
+          className={styles.profile}
+          onClick={() => {
+            handleImageClick(Loona2);
+          }}
+        />
+        <img
+          src={Minji}
+          alt={"minji"}
+          className={styles.profile}
+          onClick={() => {
+            handleImageClick(Minji);
+          }}
+        />
+        <img
+          src={NewJeans}
+          alt={"ditto"}
+          className={styles.profile}
+          onClick={() => {
+            handleImageClick(NewJeans);
+          }}
+        />
+        <img
+          src={Tangle}
+          alt={"tangletower"}
+          className={styles.profile}
+          onClick={() => {
+            handleImageClick(Tangle);
+          }}
         />
       </div>
+      <ImageModal show={imageModal} image={imgsrc} body="" />
     </div>
   );
 }

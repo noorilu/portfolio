@@ -16,7 +16,7 @@
 }
 
 .photo {
-  @apply rounded-xl hover:brightness-50 ease-in-out duration-500 inline-block;
+  @apply rounded-xl hover:brightness-75 ease-in-out duration-500 inline-block;
 }
 
 /* .hovertext {
@@ -29,11 +29,11 @@
 }
 
 .big {
-  @apply font-montserrat text-3xl;
+  @apply font-quicksand font-bold text-2xl;
 }
 
 .small {
-  @apply font-quicksand text-lg mt-3;
+  @apply font-quicksand text-base mt-3;
 }
 
 .icons1 {

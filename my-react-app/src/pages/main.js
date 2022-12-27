@@ -88,31 +88,34 @@ function Main() {
         />
         <Speech
           show={speech1}
-          speaker="Lucy"
+          speaker="Lucia"
           body="I am a programmer! With experience in Python, Java, React.js as well as machine 
           languages like MIPS, I am continuing to expand my coding knowledge to share with the world!"
           onSubmit={() => {
             PageChange("/projects");
+            window.scrollTo({ top: 0, left: 0, behavior: "auto" });
           }}
           continue="Go to PROJECTS"
         />
         <Speech
           show={speech2}
-          speaker="Lucy"
+          speaker="Lucia"
           body="I am an artist! Whether it be in visual arts or music, I've always had an 
           interest in bringing my creative ideas to reality. You can get a sense of it from this page!"
           onSubmit={() => {
             PageChange("/artworks");
+            window.scrollTo({ top: 0, left: 0, behavior: "auto" });
           }}
           continue="Go to ARTWORKS"
         />
         <Speech
           show={speech3}
-          speaker="Lucy"
+          speaker="Lucia"
           body="I am a lifelong learner! As an ambitious individual who is always looking for ways to 
           expand knowledge, I am seeking more opportunities to explore my interests in greater depth!"
           onSubmit={() => {
             PageChange("/contacts");
+            window.scrollTo({ top: 0, left: 0, behavior: "auto" });
           }}
           continue="Go to CONTACTS"
         />

@@ -7,9 +7,11 @@
 }
 
 .profileContainer {
-  @apply max-w-lg h-auto items-start;
+  @apply h-auto grid grid-cols-3 place-items-center auto-cols-min object-cover gap-3;
 }
 
 .profile {
-  @apply h-auto rounded-3xl p-4;
+  @apply rounded-3xl object-cover ease-in-out hover:scale-105 hover:brightness-75 transition duration-500 shadow-lg;
+  height: 200px;
+  width: 400px;
 }

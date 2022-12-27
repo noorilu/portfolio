@@ -54,6 +54,37 @@ function Projects() {
           />
         </div>
       </div>
+
+      <div className={styles.project}>
+        <div
+          className={styles.reference}
+          onClick={() =>
+            openInNewTab("https://github.com/CS110-Project-Team/Project")
+          }
+        >
+          <img
+            src={require("../static/projectIcons/project2.png")}
+            alt={"covid"}
+            className={styles.photo}
+          />
+          {/* <div className={styles.hovertext}>project3</div> */}
+        </div>
+        <div className={styles.about}>
+          <p className={styles.big}>
+            COVID-19: How Canadians Cope with Rising Food Prices
+          </p>
+          <p className={styles.small}>
+            Choropleth maps to investigate the impact of COVID-19 on the
+            correlation between food price and its substitutes and complements.
+          </p>
+          <img
+            src={require("../static/languages/python.png")}
+            alt={"python"}
+            className={styles.icons2}
+          />
+        </div>
+      </div>
+
       <div className={styles.project}>
         <div
           className={styles.reference}
@@ -80,35 +111,6 @@ function Projects() {
           <img
             src={require("../static/languages/firebase.png")}
             alt={"firebase"}
-            className={styles.icons2}
-          />
-        </div>
-      </div>
-      <div className={styles.project}>
-        <div
-          className={styles.reference}
-          onClick={() =>
-            openInNewTab("https://github.com/CS110-Project-Team/Project")
-          }
-        >
-          <img
-            src={require("../static/projectIcons/project2.png")}
-            alt={"covid"}
-            className={styles.photo}
-          />
-          {/* <div className={styles.hovertext}>project3</div> */}
-        </div>
-        <div className={styles.about}>
-          <p className={styles.big}>
-            COVID-19: How Canadians Cope with Rising Food Prices
-          </p>
-          <p className={styles.small}>
-            Choropleth maps to investigate the impact of COVID-19 on the
-            correlation between food price and its substitutes and complements.
-          </p>
-          <img
-            src={require("../static/languages/python.png")}
-            alt={"python"}
             className={styles.icons2}
           />
         </div>

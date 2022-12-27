@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.content {
+  @apply flex fixed z-20 object-contain justify-center items-center rounded-3xl shadow-xl bg-white p-6;
+  height: auto;
+  width: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.image {
+  @apply object-contain place-items-center;
+  max-width: 870px;
+  max-height: 600px;
+}
