@@ -16,15 +16,23 @@ function Projects() {
     <div className={styles.projectsContainer}>
       <div className={styles.project}>
         <div
-          className={styles.reference}
+          // className={styles.reference}
+          class="group flex max-h-60 overflow-hidden shadow-lg rounded-xl ease-in-out hover:scale-110 transition duration-500
+          w-1/2"
           onClick={() => openInNewTab("https://github.com/J-TALE/J-TALE")}
         >
           <img
             src={require("../static/projectIcons/project1.png")}
             alt={"jtale"}
-            className={styles.photo}
+            // className={styles.photo}
+            class="rounded-xl object-cover object-top group-hover:brightness-75 ease-in-out duration-500 inline-block"
           />
-          {/* <div className={styles.hovertext}>project1</div> */}
+          <div
+            // className={styles.hovertext}
+            class="absolute text-center font-upheaval text-white text-3xl opacity-0 group-hover:opacity-100 ease-in-out duration-500 w-full place-self-center tracking-wider"
+          >
+            See on Github
+          </div>
         </div>
         <div className={styles.about}>
           <p className={styles.big}>Auto-Suggest for Chatbot Creators</p>
@@ -57,7 +65,9 @@ function Projects() {
 
       <div className={styles.project}>
         <div
-          className={styles.reference}
+          // className={styles.reference}
+          class="group flex max-h-60 overflow-hidden shadow-lg rounded-xl ease-in-out hover:scale-110 transition duration-500
+          w-1/2"
           onClick={() =>
             openInNewTab("https://github.com/CS110-Project-Team/Project")
           }
@@ -65,9 +75,15 @@ function Projects() {
           <img
             src={require("../static/projectIcons/project2.png")}
             alt={"covid"}
-            className={styles.photo}
+            // className={styles.photo}
+            class="rounded-xl object-cover object-top group-hover:brightness-75 ease-in-out duration-500 inline-block"
           />
-          {/* <div className={styles.hovertext}>project3</div> */}
+          <div
+            // className={styles.hovertext}
+            class="absolute text-center font-upheaval text-white text-3xl opacity-0 group-hover:opacity-100 ease-in-out duration-500 w-full place-self-center tracking-wider"
+          >
+            See on Github
+          </div>
         </div>
         <div className={styles.about}>
           <p className={styles.big}>
@@ -87,15 +103,23 @@ function Projects() {
 
       <div className={styles.project}>
         <div
-          className={styles.reference}
+          // className={styles.reference}
+          class="group flex max-h-60 overflow-hidden shadow-lg rounded-xl ease-in-out hover:scale-110 transition duration-500
+          w-1/2"
           onClick={() => openInNewTab("https://github.com/jltng/htn-2022")}
         >
           <img
             src={require("../static/projectIcons/project3.png")}
             alt={"sttb"}
-            className={styles.photo}
+            // className={styles.photo}
+            class="rounded-xl object-cover object-top group-hover:brightness-75 ease-in-out duration-500 inline-block"
           />
-          {/* <div className={styles.hovertext}>project2</div> */}
+          <div
+            // className={styles.hovertext}
+            class="absolute text-center font-upheaval text-white text-3xl opacity-0 group-hover:opacity-100 ease-in-out duration-500 w-full place-self-center tracking-wider"
+          >
+            See on Github
+          </div>
         </div>
         <div className={styles.about}>
           <p className={styles.big}>Beats to the Step</p>

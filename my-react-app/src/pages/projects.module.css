@@ -11,17 +11,26 @@
 }
 
 .reference {
-  @apply max-h-60 overflow-hidden shadow-lg rounded-xl ease-in-out hover:scale-110 transition duration-500;
+  @apply flex max-h-60 overflow-hidden shadow-lg rounded-xl ease-in-out hover:scale-110 transition duration-500;
   width: 50%;
 }
 
 .photo {
-  @apply rounded-xl hover:brightness-75 ease-in-out duration-500 inline-block;
+  @apply rounded-xl object-cover object-top group-hover:brightness-75 ease-in-out duration-500 inline-block;
 }
 
-/* .hovertext {
-  @apply absolute font-omori text-5xl;
-} */
+.hovertext {
+  @apply absolute font-omori text-white text-5xl opacity-0 group-hover:opacity-100 ease-in-out duration-500;
+}
+
+.click {
+  width: 300px;
+  background: white;
+  font-size: 40px;
+  margin: 100px auto;
+  padding: 10px;
+  cursor: pointer;
+}
 
 .about {
   @apply inline-block px-10;

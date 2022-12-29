@@ -57,3 +57,28 @@
   left: 88%;
   right: 88%;
 }
+
+.highlightContainer,
+.highlight {
+  position: relative;
+}
+
+.highlightContainer {
+  display: inline-block;
+}
+.highlightContainer:before {
+  content: " ";
+  display: block;
+  height: 90%;
+  width: 100%;
+  margin-left: -3px;
+  margin-right: -3px;
+  position: absolute;
+  background: #fcd34d;
+  opacity: 50%;
+  transform: rotate(2deg);
+  top: -1px;
+  left: -1px;
+  border-radius: 20% 25% 20% 24%;
+  padding: 10px 3px 3px 10px;
+}

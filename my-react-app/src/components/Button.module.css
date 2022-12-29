@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.text {
+  @apply font-quicksand;
+}
+
 .speechContinue {
   @apply px-6 py-2 font-upheaval text-white;
 }

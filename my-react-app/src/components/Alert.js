@@ -9,7 +9,7 @@ import styles from "./Alert.module.css";
 /** @prop {boolean} [success] : whether the task was successful or not*/
 /** @prop {String} [message] : message to display on modal*/
 
-const Alert = (props) => {
+function Alert(props) {
   if (!props.show) {
     return null;
   }
@@ -27,6 +27,6 @@ const Alert = (props) => {
       )}
     </div>
   );
-};
+}
 
 export default Alert;
