@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.mainContainer {
+  @apply container mx-auto m-2 w-3/4 px-20 py-16 block rounded-3xl bg-white;
+}
+
+.profileContainer {
+  @apply flex h-auto items-center;
+}
+
+.container1 {
+  @apply w-1/4 h-auto rounded-3xl object-cover inline-block text-right;
+}
+
+.container2 {
+  @apply w-3/4 h-auto inline-block py-6 px-10 ml-10 bg-[#dfeaf0] rounded-3xl font-quicksand text-xl;
+}
+
+.container3 {
+  @apply mt-10 flex justify-around;
+}
+
+.container4 {
+  @apply justify-center;
+}
+
+.icons {
+  @apply w-20 h-auto object-cover inline-block;
+}
+
+.big {
+  @apply font-cotton text-7xl;
+}
+
+.small {
+  @apply font-quicksand text-xl;
+}
+
+.label {
+  @apply font-bold block text-center text-xl;
+  margin: 0 0 2vh 0;
+}
+
+.input,
+textarea {
+  @apply block w-full px-2 py-3 rounded-md text-xl;
+  margin: 0.9vw 0;
+}
+
+.textarea {
+  height: 15vh;
+}
+
+.container5 {
+  @apply flex items-center justify-center;
+}
+
+.submitBtn {
+  @apply inline-block rounded-md px-8 py-2 bg-white;
+}

@@ -41,7 +41,7 @@ function Navbar() {
             className={styles.navIcon}
           />
         </Link>
-        <Link to="/">
+        <Link to="/contacts">
           <img
             src={require("../static/icons/contacts.PNG")}
             alt={"cactus"}
