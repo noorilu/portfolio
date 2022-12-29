@@ -40,152 +40,153 @@ function Artworks() {
 
   return (
     <div
-      className={styles.mainContainer}
       onClick={() => {
         if (imageModal) {
           setImageModal(false);
         }
       }}
     >
-      <div className={styles.profileContainer}>
-        <img
-          src={Howl}
-          alt={"howl"}
-          className={styles.profile}
-          onClick={() => {
-            handleImageClick(Howl);
-          }}
-        />
-        <img
-          src={Kiki}
-          alt={"kiki"}
-          className={styles.profile}
-          onClick={() => {
-            handleImageClick(Kiki);
-          }}
-        />
-        <img
-          src={Totoro}
-          alt={"totoro"}
-          className={styles.profile}
-          onClick={() => {
-            handleImageClick(Totoro);
-          }}
-        />
-        <img
-          src={Ponyo}
-          alt={"ponyo"}
-          className={styles.profile}
-          onClick={() => {
-            handleImageClick(Ponyo);
-          }}
-        />
-        <img
-          src={Arrietty}
-          alt={"arrietty"}
-          className={styles.profile}
-          onClick={() => {
-            handleImageClick(Arrietty);
-          }}
-        />
-        <img
-          src={Marnie}
-          alt={"marnie"}
-          className={styles.profile}
-          onClick={() => {
-            handleImageClick(Marnie);
-          }}
-        />
-        <img
-          src={DST1}
-          alt={"dst1"}
-          className={styles.profile}
-          onClick={() => {
-            handleImageClick(DST1);
-          }}
-        />
-        <img
-          src={DST2}
-          alt={"dst2"}
-          className={styles.profile}
-          onClick={() => {
-            handleImageClick(DST2);
-          }}
-        />
-        <img
-          src={Stardew}
-          alt={"sv1"}
-          className={styles.profile}
-          onClick={() => {
-            handleImageClick(Stardew);
-          }}
-        />
-        <img
-          src={Apricot}
-          alt={"apricot"}
-          className={styles.profile}
-          onClick={() => {
-            handleImageClick(Apricot);
-          }}
-        />
-        <img
-          src={Butterfly}
-          alt={"butterflysoup"}
-          className={styles.profile}
-          onClick={() => {
-            handleImageClick(Butterfly);
-          }}
-        />
-        <img
-          src={Iforgor}
-          alt={"iforgor"}
-          className={styles.profile}
-          onClick={() => {
-            handleImageClick(Iforgor);
-          }}
-        />
-        <img
-          src={Loona1}
-          alt={"loona1"}
-          className={styles.profile}
-          onClick={() => {
-            handleImageClick(Loona1);
-          }}
-        />
-        <img
-          src={Loona2}
-          alt={"loona2"}
-          className={styles.profile}
-          onClick={() => {
-            handleImageClick(Loona2);
-          }}
-        />
-        <img
-          src={Minji}
-          alt={"minji"}
-          className={styles.profile}
-          onClick={() => {
-            handleImageClick(Minji);
-          }}
-        />
-        <img
-          src={NewJeans}
-          alt={"ditto"}
-          className={styles.profile}
-          onClick={() => {
-            handleImageClick(NewJeans);
-          }}
-        />
-        <img
-          src={Tangle}
-          alt={"tangletower"}
-          className={styles.profile}
-          onClick={() => {
-            handleImageClick(Tangle);
-          }}
-        />
+      <div className={styles.mainContainer}>
+        <div className={styles.profileContainer}>
+          <img
+            src={Howl}
+            alt={"howl"}
+            className={styles.profile}
+            onClick={() => {
+              handleImageClick(Howl);
+            }}
+          />
+          <img
+            src={Kiki}
+            alt={"kiki"}
+            className={styles.profile}
+            onClick={() => {
+              handleImageClick(Kiki);
+            }}
+          />
+          <img
+            src={Totoro}
+            alt={"totoro"}
+            className={styles.profile}
+            onClick={() => {
+              handleImageClick(Totoro);
+            }}
+          />
+          <img
+            src={Ponyo}
+            alt={"ponyo"}
+            className={styles.profile}
+            onClick={() => {
+              handleImageClick(Ponyo);
+            }}
+          />
+          <img
+            src={Arrietty}
+            alt={"arrietty"}
+            className={styles.profile}
+            onClick={() => {
+              handleImageClick(Arrietty);
+            }}
+          />
+          <img
+            src={Marnie}
+            alt={"marnie"}
+            className={styles.profile}
+            onClick={() => {
+              handleImageClick(Marnie);
+            }}
+          />
+          <img
+            src={DST1}
+            alt={"dst1"}
+            className={styles.profile}
+            onClick={() => {
+              handleImageClick(DST1);
+            }}
+          />
+          <img
+            src={DST2}
+            alt={"dst2"}
+            className={styles.profile}
+            onClick={() => {
+              handleImageClick(DST2);
+            }}
+          />
+          <img
+            src={Stardew}
+            alt={"sv1"}
+            className={styles.profile}
+            onClick={() => {
+              handleImageClick(Stardew);
+            }}
+          />
+          <img
+            src={Apricot}
+            alt={"apricot"}
+            className={styles.profile}
+            onClick={() => {
+              handleImageClick(Apricot);
+            }}
+          />
+          <img
+            src={Butterfly}
+            alt={"butterflysoup"}
+            className={styles.profile}
+            onClick={() => {
+              handleImageClick(Butterfly);
+            }}
+          />
+          <img
+            src={Iforgor}
+            alt={"iforgor"}
+            className={styles.profile}
+            onClick={() => {
+              handleImageClick(Iforgor);
+            }}
+          />
+          <img
+            src={Loona1}
+            alt={"loona1"}
+            className={styles.profile}
+            onClick={() => {
+              handleImageClick(Loona1);
+            }}
+          />
+          <img
+            src={Loona2}
+            alt={"loona2"}
+            className={styles.profile}
+            onClick={() => {
+              handleImageClick(Loona2);
+            }}
+          />
+          <img
+            src={Minji}
+            alt={"minji"}
+            className={styles.profile}
+            onClick={() => {
+              handleImageClick(Minji);
+            }}
+          />
+          <img
+            src={NewJeans}
+            alt={"ditto"}
+            className={styles.profile}
+            onClick={() => {
+              handleImageClick(NewJeans);
+            }}
+          />
+          <img
+            src={Tangle}
+            alt={"tangletower"}
+            className={styles.profile}
+            onClick={() => {
+              handleImageClick(Tangle);
+            }}
+          />
+        </div>
+        <ImageModal show={imageModal} image={imgsrc} body="" />
       </div>
-      <ImageModal show={imageModal} image={imgsrc} body="" />
     </div>
   );
 }

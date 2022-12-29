@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.alert {
+  @apply justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-x-0 z-50;
+  top: 40px;
+}
+
+.success {
+  @apply bg-[#84cc16] rounded-3xl shadow-lg relative flex justify-center flex-col z-10;
+  width: 240px;
+  min-height: 60px;
+  height: auto;
+}
+
+.failure {
+  @apply bg-red-500 rounded-3xl shadow-lg relative flex justify-center items-center flex-col z-10;
+  width: 240px;
+  min-height: 60px;
+  height: auto;
+}
+
+.text {
+  @apply text-center text-white font-quicksand font-bold text-xl justify-center items-center;
+}

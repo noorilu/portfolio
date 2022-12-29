@@ -6,17 +6,29 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className={styles.navContainer}>
-        <Link to="/">
+        <Link to="/main">
           <img
             src={require("../static/icons/main.PNG")}
-            alt={"apple"}
+            onMouseOver={(e) =>
+              (e.currentTarget.src = require("../static/icons/apple.PNG"))
+            }
+            onMouseOut={(e) =>
+              (e.currentTarget.src = require("../static/icons/main.PNG"))
+            }
+            alt={"main"}
             className={styles.navIcon}
           />
         </Link>
         <Link to="/projects">
           <img
             src={require("../static/icons/projects.PNG")}
-            alt={"bunny"}
+            onMouseOver={(e) =>
+              (e.currentTarget.src = require("../static/icons/bunny.PNG"))
+            }
+            onMouseOut={(e) =>
+              (e.currentTarget.src = require("../static/icons/projects.PNG"))
+            }
+            alt={"projects"}
             className={styles.navIcon}
           />
         </Link>
@@ -37,14 +49,26 @@ function Navbar() {
         <Link to="/artworks">
           <img
             src={require("../static/icons/art.PNG")}
-            alt={"poo"}
+            onMouseOver={(e) =>
+              (e.currentTarget.src = require("../static/icons/poo.PNG"))
+            }
+            onMouseOut={(e) =>
+              (e.currentTarget.src = require("../static/icons/art.PNG"))
+            }
+            alt={"artworks"}
             className={styles.navIcon}
           />
         </Link>
         <Link to="/contacts">
           <img
             src={require("../static/icons/contacts.PNG")}
-            alt={"cactus"}
+            onMouseOver={(e) =>
+              (e.currentTarget.src = require("../static/icons/cactus.PNG"))
+            }
+            onMouseOut={(e) =>
+              (e.currentTarget.src = require("../static/icons/contacts.PNG"))
+            }
+            alt={"contacts"}
             className={styles.navIcon}
           />
         </Link>

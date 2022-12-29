@@ -27,7 +27,7 @@
 }
 
 .icons {
-  @apply w-20 h-auto object-cover inline-block;
+  @apply w-10 mt-4 h-auto object-cover inline-block ml-5 opacity-75 hover:opacity-100 transition duration-500 ease-in-out hover:scale-125;
 }
 
 .big {
@@ -43,20 +43,20 @@
   margin: 0 0 2vh 0;
 }
 
-.input,
-textarea {
+.input {
   @apply block w-full px-2 py-3 rounded-md text-xl;
   margin: 0.9vw 0;
 }
 
 .textarea {
+  @apply block w-full px-2 py-3 rounded-md text-xl;
   height: 15vh;
 }
 
 .container5 {
-  @apply flex items-center justify-center;
+  @apply flex items-center justify-center mt-4 rounded-md px-8 py-2;
 }
 
 .submitBtn {
-  @apply inline-block rounded-md px-8 py-2 bg-white;
+  @apply font-bold w-16 bg-white;
 }

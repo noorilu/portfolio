@@ -3,18 +3,22 @@ import { useState, useRef } from "react";
 import styles from "./contacts.module.css";
 import { useNavigate } from "react-router-dom";
 import emailjs from "@emailjs/browser";
+import Alert from "../components/Alert";
 
 function Contacts() {
+  const [confirm, setConfirm] = useState(false);
   const Navigate = useNavigate();
   const PageChange = (url) => {
     Navigate(url);
   };
 
   const form = useRef();
+  const openInNewTab = (url) => {
+    window.open(url, "_blank", "noreferrer");
+  };
 
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs
       .sendForm(
         process.env.REACT_APP_SERVICE_ID,
@@ -25,6 +29,10 @@ function Contacts() {
       .then(
         (result) => {
           console.log(result.text);
+          setConfirm(true);
+          setTimeout(() => {
+            setConfirm(false);
+          }, 2000);
         },
         (error) => {
           console.log(error.text);
@@ -34,45 +42,58 @@ function Contacts() {
 
   return (
     <div className={styles.mainContainer}>
+      <Alert show={confirm} success={true} message="Email sent successfully!" />
       <div className={styles.profileContainer}>
         <div className={styles.container1}>
           <p className={styles.big}>
             Get in<br></br>Touch!
           </p>
+          <img
+            src={require("../static/icons/email.png")}
+            className={styles.icons}
+            onClick={() => openInNewTab("mailto:lucia.kim0816@gmail.com")}
+          ></img>
+          <img
+            src={require("../static/icons/linkedin.png")}
+            className={styles.icons}
+            onClick={() =>
+              openInNewTab("https://www.linkedin.com/in/luci-kim/")
+            }
+          ></img>
+          <img
+            src={require("../static/icons/github.png")}
+            className={styles.icons}
+            onClick={() => openInNewTab("https://github.com/noorilu")}
+          ></img>
         </div>
         <div className={styles.container2}>
           <p className={styles.label}>Send me a message</p>
-          <form ref={form}>
-            <input className={styles.input} placeholder="Name" />
-            <input className={styles.input} placeholder="Email" />
-            <textarea className={styles.textarea} placeholder="Message" />
+          <form ref={form} onSubmit={sendEmail}>
+            <input
+              className={styles.input}
+              placeholder="Name"
+              required
+              name="user_name"
+            />
+            <input
+              className={styles.input}
+              placeholder="Email"
+              required
+              pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
+              name="user_email"
+            />
+            <textarea
+              className={styles.textarea}
+              placeholder="Message"
+              required
+              name="message"
+            />
             <div className={styles.container5}>
-              <button className={styles.submitBtn} onClick={sendEmail}>
+              <button className={styles.submitBtn} type="submit">
                 Send
               </button>
             </div>
           </form>
-        </div>
-      </div>
-      <p className={styles.small}>or... reach me here!</p>
-      <div className={styles.container3}>
-        <div className={styles.container4}>
-          <img
-            src={require("../static/icons/email.png")}
-            className={styles.icons}
-          ></img>
-        </div>
-        <div className={styles.container4}>
-          <img
-            src={require("../static/icons/linkedin.png")}
-            className={styles.icons}
-          ></img>
-        </div>
-        <div className={styles.container4}>
-          <img
-            src={require("../static/icons/github.png")}
-            className={styles.icons}
-          ></img>
         </div>
       </div>
     </div>
