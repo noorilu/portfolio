@@ -4,6 +4,7 @@ import styles from "./main.module.css";
 import { useNavigate } from "react-router-dom";
 import Speech from "../components/Speech";
 import AnimatedTyping from "../components/AnimatedTyping";
+import Button from "../components/Button";
 
 function Main() {
   const [speech1, setSpeech1] = useState(false);
@@ -57,6 +58,36 @@ function Main() {
               <br></br>
               Interact with my room to learn more about me!
             </p>
+            <Button
+              buttonType="green"
+              onClick={() => {
+                PageChange("/projects");
+                window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+              }}
+              disabled={false}
+              image={require("../static/icons/projects.PNG")}
+              text="Projects"
+            />
+            <Button
+              buttonType="green"
+              onClick={() => {
+                PageChange("/artworks");
+                window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+              }}
+              disabled={false}
+              image={require("../static/icons/art.PNG")}
+              text="Artworks"
+            />
+            <Button
+              buttonType="green"
+              onClick={() => {
+                PageChange("/contacts");
+                window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+              }}
+              disabled={false}
+              image={require("../static/icons/contacts.PNG")}
+              text="Contacts"
+            />
           </div>
         </div>
         <div className={styles.roomContainer}>

@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.green {
+  @apply mt-6 rounded-3xl w-36 px-4 py-2 text-[#576733] hover:bg-[#cfd9b7] border-2 border-[#afbc91] font-quicksand font-bold text-sm mr-4;
+}
