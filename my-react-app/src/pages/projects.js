@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 import styles from "./projects.module.css";
 import { useNavigate } from "react-router-dom";
 import Button from "../components/Button";

@@ -1,17 +1,17 @@
 import React from "react";
 import { useState, useRef } from "react";
 import styles from "./contacts.module.css";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import emailjs from "@emailjs/browser";
 import Alert from "../components/Alert";
 import Button from "../components/Button";
 
 function Contacts() {
   const [confirm, setConfirm] = useState(false);
-  const Navigate = useNavigate();
-  const PageChange = (url) => {
-    Navigate(url);
-  };
+  // const Navigate = useNavigate();
+  // const PageChange = (url) => {
+  //   Navigate(url);
+  // };
 
   const form = useRef();
   const openInNewTab = (url) => {
