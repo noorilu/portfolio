@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import styles from "./projects.module.css";
 import { useNavigate } from "react-router-dom";
+import Button from "../components/Button";
 
 function Projects() {
   const Navigate = useNavigate();
@@ -138,6 +139,47 @@ function Projects() {
             className={styles.icons2}
           />
         </div>
+      </div>
+      <div className={styles.coursework}>
+        <p className={styles.big2}>Relevant Coursework and Grades</p>
+        <p className={styles.small2}>
+          <b>CSC258</b> Computer Organization (93)<br></br>
+          <b>CSC236</b> Intro to Theory of Computation (90)<br></br>
+          <b>STA130</b> Intro to Statistical Reasoning and Data Science (86)
+        </p>
+        <p className={styles.small2}>
+          <b>CSC207</b> Software Design (91) <br></br>
+          <b>CSC111</b> Foundations of Computer Science (89)
+        </p>
+      </div>
+      <div className={styles.buttons}>
+        <Button
+          buttonType="green"
+          onClick={() => {
+            PageChange("/main");
+            window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+          }}
+          image={require("../static/icons/main.PNG")}
+          text="Main"
+        />
+        <Button
+          buttonType="green"
+          onClick={() => {
+            PageChange("/artworks");
+            window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+          }}
+          image={require("../static/icons/art.PNG")}
+          text="Artworks"
+        />
+        <Button
+          buttonType="green"
+          onClick={() => {
+            PageChange("/contacts");
+            window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+          }}
+          image={require("../static/icons/contacts.PNG")}
+          text="Contacts"
+        />
       </div>
     </div>
   );

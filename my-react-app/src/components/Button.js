@@ -8,7 +8,7 @@ import "./Button.css";
  @prop {String} [buttonType] : predefined style of buttons
  @prop {function} [onClick] : the function to be executed on click
  @prop {String} [text] : Text to be displayed on the button
- @prop {} [image] : image to be displayed on the button
+ @prop {String} [image] : image to be displayed on the button
 **/
 
 function Button(props) {
@@ -18,7 +18,7 @@ function Button(props) {
       style={props.className}
       onClick={props.onClick}
     >
-      <img src={props.image} class="inline-flex w-8 mr-2" />
+      <img src={props.image} class="inline-flex w-8 mr-2" alt="icon" />
       {props.text}
     </button>
   );

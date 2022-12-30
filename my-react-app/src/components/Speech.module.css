@@ -27,8 +27,8 @@
 
 .footer {
   @apply flex absolute w-auto h-auto z-30 text-white font-quicksand text-xl font-bold;
-  top: 88%;
-  right: 5%;
+  top: 86%;
+  right: 3%;
 }
 
 .speaker {

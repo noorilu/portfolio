@@ -3,6 +3,7 @@ import { useState } from "react";
 import styles from "./artworks.module.css";
 import { useNavigate } from "react-router-dom";
 import ImageModal from "../components/ImageModal.js";
+import Button from "../components/Button";
 import Howl from "../static/art/ghmc.PNG";
 import Kiki from "../static/art/gkds.PNG";
 import Totoro from "../static/art/gmnt.PNG";
@@ -183,6 +184,35 @@ function Artworks() {
             onClick={() => {
               handleImageClick(Tangle);
             }}
+          />
+        </div>
+        <div className={styles.buttons}>
+          <Button
+            buttonType="green"
+            onClick={() => {
+              PageChange("/main");
+              window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+            }}
+            image={require("../static/icons/main.PNG")}
+            text="Main"
+          />
+          <Button
+            buttonType="green"
+            onClick={() => {
+              PageChange("/projects");
+              window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+            }}
+            image={require("../static/icons/projects.PNG")}
+            text="Projects"
+          />
+          <Button
+            buttonType="green"
+            onClick={() => {
+              PageChange("/contacts");
+              window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+            }}
+            image={require("../static/icons/contacts.PNG")}
+            text="Contacts"
           />
         </div>
         <ImageModal show={imageModal} image={imgsrc} body="" />

@@ -30,6 +30,7 @@ function Speech(props) {
         <Button
           buttonType="speechContinue"
           onClick={props.onSubmit}
+          image={props.image}
           text={props.continue}
         />
       </div>

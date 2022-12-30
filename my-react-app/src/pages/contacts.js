@@ -4,6 +4,7 @@ import styles from "./contacts.module.css";
 import { useNavigate } from "react-router-dom";
 import emailjs from "@emailjs/browser";
 import Alert from "../components/Alert";
+import Button from "../components/Button";
 
 function Contacts() {
   const [confirm, setConfirm] = useState(false);
@@ -51,11 +52,13 @@ function Contacts() {
           <img
             src={require("../static/icons/email.png")}
             className={styles.icons}
+            alt="email"
             onClick={() => openInNewTab("mailto:lucia.kim0816@gmail.com")}
           ></img>
           <img
             src={require("../static/icons/linkedin.png")}
             className={styles.icons}
+            alt="linkedin"
             onClick={() =>
               openInNewTab("https://www.linkedin.com/in/luci-kim/")
             }
@@ -63,6 +66,7 @@ function Contacts() {
           <img
             src={require("../static/icons/github.png")}
             className={styles.icons}
+            alt="github"
             onClick={() => openInNewTab("https://github.com/noorilu")}
           ></img>
         </div>
@@ -89,9 +93,15 @@ function Contacts() {
               name="message"
             />
             <div className={styles.container5}>
-              <button className={styles.submitBtn} type="submit">
+              {/* <button className={styles.submitBtn} type="submit">
                 Send
-              </button>
+              </button> */}
+              <Button
+                buttonType="submit"
+                type="submit"
+                text="Send"
+                image={require("../static/icons/main.PNG")}
+              />
             </div>
           </form>
         </div>

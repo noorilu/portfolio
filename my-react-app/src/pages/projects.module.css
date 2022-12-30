@@ -38,11 +38,11 @@
 }
 
 .big {
-  @apply font-quicksand font-bold text-2xl;
+  @apply font-quicksand font-bold text-2xl text-[#404040];
 }
 
 .small {
-  @apply font-quicksand text-base mt-3;
+  @apply font-quicksand text-base mt-3 text-[#404040];
 }
 
 .icons1 {
@@ -66,4 +66,20 @@
 .icons5 {
   @apply h-6 mr-4 inline-block;
   margin-top: 17px;
+}
+
+.coursework {
+  @apply flex block rounded-3xl mt-6 px-4 py-4 items-start;
+}
+
+.big2 {
+  @apply font-quicksand font-bold text-xl text-[#404040] mb-3;
+}
+
+.small2 {
+  @apply w-1/2 inline-block font-quicksand text-base text-[#404040] items-start mx-2;
+}
+
+.buttons {
+  @apply flex justify-center;
 }

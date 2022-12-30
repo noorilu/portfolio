@@ -32,13 +32,13 @@ function Main() {
       <div className={styles.mainContainer}>
         <div className={styles.profileContainer}>
           <img
-            src={require("../static/profile.PNG")}
+            src={require("../static/profileNEW1.PNG")}
             alt={"profile"}
             className={styles.profile}
           />
           <div className={styles.introduction}>
             <p className={styles.big}>
-              Hello!<br></br>I'm Lucia:)
+              Hello!<br></br>I'm Lucia :)
             </p>
             <p className={styles.small}>
               <br></br>I am a second year student at the{" "}
@@ -90,6 +90,7 @@ function Main() {
             />
           </div>
         </div>
+
         <div className={styles.roomContainer}>
           <img
             src={require("../static/room.PNG")}
@@ -128,7 +129,8 @@ function Main() {
               PageChange("/projects");
               window.scrollTo({ top: 0, left: 0, behavior: "auto" });
             }}
-            continue="Go to PROJECTS"
+            image={require("../static/icons/projects.PNG")}
+            continue="See PROJECTS"
           />
           <Speech
             show={speech2}
@@ -144,7 +146,8 @@ function Main() {
               PageChange("/artworks");
               window.scrollTo({ top: 0, left: 0, behavior: "auto" });
             }}
-            continue="Go to ARTWORKS"
+            image={require("../static/icons/art.PNG")}
+            continue="See ARTWORKS"
           />
           <Speech
             show={speech3}
@@ -160,7 +163,8 @@ function Main() {
               PageChange("/contacts");
               window.scrollTo({ top: 0, left: 0, behavior: "auto" });
             }}
-            continue="Go to CONTACTS"
+            image={require("../static/icons/contacts.PNG")}
+            continue="See CONTACTS"
           />
         </div>
       </div>

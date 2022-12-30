@@ -15,15 +15,15 @@
 }
 
 .introduction {
-  @apply w-3/5 h-auto inline-block py-6 px-10;
+  @apply w-3/5 h-auto inline-block py-4 px-10;
 }
 
 .big {
-  @apply font-cotton text-7xl;
+  @apply font-cotton text-7xl text-[#404040];
 }
 
 .small {
-  @apply font-quicksand text-xl;
+  @apply font-quicksand text-xl text-[#404040];
 }
 
 .roomContainer {
@@ -58,6 +58,18 @@
   right: 88%;
 }
 
+.coursework {
+  @apply flex rounded-3xl px-4 py-4 items-start mt-6;
+}
+
+.big2 {
+  @apply font-quicksand font-bold text-xl text-[#404040] mb-3;
+}
+
+.small2 {
+  @apply w-1/2 inline-block font-quicksand text-base text-[#404040] items-start mx-2;
+}
+
 .highlightContainer,
 .highlight {
   position: relative;
@@ -74,7 +86,7 @@
   margin-left: -3px;
   margin-right: -3px;
   position: absolute;
-  background: #fcd34d;
+  background: #cfd9b7;
   opacity: 50%;
   transform: rotate(2deg);
   top: -1px;

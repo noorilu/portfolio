@@ -23,7 +23,12 @@ function App() {
       <h1 class="font-upheaval text-xl">Upheaval Font</h1>
       <h1 class="font-blackoak text-xl">Blackoak Font</h1>
       <h1 class="font-cotton text-xl">Cotton Cloud</h1>
-      <h1 class="font-omori text-xl">Omori Nice</h1> */}
+      <h1 class="font-omori text-xl">Omori Nice</h1>
+      <h1 class="font-oxygen text-xl">Oxygen</h1>
+      <h1 class="font-greycliff text-xl">Greycliff</h1>
+      <h1 class="font-quicksand text-xl">Quicksand</h1>
+      <h1 class="font-montserrat text-xl">Montserrat</h1>
+      <h1 class="font-sacramento text-xl">sacramento</h1> */}
     </div>
   );
 }
