@@ -21,6 +21,7 @@ import Loona2 from "../static/art/l2.PNG";
 import Minji from "../static/art/mj.PNG";
 import NewJeans from "../static/art/nj.jpg";
 import Tangle from "../static/art/tt.jpg";
+import Athena from "../static/art/Untitled_Artwork.png";
 
 function Artworks() {
   const [imageModal, setImageModal] = useState(false);
@@ -183,6 +184,14 @@ function Artworks() {
             className={styles.profile}
             onClick={() => {
               handleImageClick(Tangle);
+            }}
+          />
+          <img
+            src={Athena}
+            alt={"athena"}
+            className={styles.profile}
+            onClick={() => {
+              handleImageClick(Athena);
             }}
           />
         </div>
