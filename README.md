@@ -1,3 +1,3 @@
 # Portfolio
 
-## :computer: https://luciakim.netlify.app
+:computer: https://luciakim.netlify.app
